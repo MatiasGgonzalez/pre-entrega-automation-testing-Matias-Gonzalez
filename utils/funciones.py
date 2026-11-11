@@ -62,6 +62,7 @@ def obtener_producto_por_indice(driver, indice):
 def agregar_producto_al_carrito(driver, indice, timeout=10):
     ## Traemos los productos 
     productos = obtener_productos(driver, timeout)
+    #
     producto = productos[indice]
 
     ## Guardamos el nombre del producto antes de agregarlo 
@@ -81,7 +82,7 @@ def agregar_producto_al_carrito(driver, indice, timeout=10):
 def obtener_contador_carrito(driver, timeout=10):
     wait = WebDriverWait(driver, timeout)
 
-    ## Esperamos a que el badge del carrito sea visible
+    ## Esperamos a que el logo del carrito sea visible
     badge = wait.until(EC.visibility_of_element_located((By.CLASS_NAME, "shopping_cart_badge")))
 
     ## Convertimos el texto a entero y lo devolvemos

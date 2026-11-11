@@ -1,22 +1,35 @@
-import pytest   
 from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.service import Service
-from utils.funciones import login, obtener_productos, agregar_producto_al_carrito, obtener_contador_carrito, ir_al_carrito, obtener_productos_carrito
+from pages.login_page import LoginPage
+from pages.inventory_page import InventoryPage
+from pages.cart_page import CartPage
+from  utils.reader import reader_productos_json
+
+def test_cart(driver):
+    login_page = LoginPage(driver)
+    inventory_page = InventoryPage(driver)
+    cart_page = CartPage(driver)
 
 
-def test_cart() :
-    driver = webdriver.Chrome()
-    driver.implicitly_wait(10)
-    try:
+    driver.get("https://www.saucedemo.com/")
+    login_page.login("standard_user", "secret_sauce")
 
-        # Login
-        login(driver)
-        lista_productos = obtener_productos(driver,10)
-        primer_producto = lista_productos[0]
-        print(f"Primer producto: {primer_producto.text}")
+    # Leer el primer producto del json
+    producto = reader_productos_json()[0]  # Obtener el primer producto del JSON
+    nombre_producto = producto["nombre"]
 
+    # Agregar producto del json
+    inventory_page.agregar_producto(nombre_producto)
 
-    finally:
+    #ir al carrito
+    inventory_page.ir_al_carrito()
 
-        driver.quit()           
+    # Verificar que el producto agregado esté en el carrito
+    assert inventory_page.obtener_contador_carrito() == "1"
+
+    # Verificar que el nombre del producto en el carrito sea el mismo que el del JSON
+    assert cart_page.obtener_nombre_producto() == nombre_producto
+
+    # Validar precio seael mismo que el del JSON
+    assert cart_page.obtener_precio_productos() == producto["precio"]
+
+    
