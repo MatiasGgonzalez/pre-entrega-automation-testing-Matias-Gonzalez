@@ -1,5 +1,4 @@
 usuario,password
 standard_user,secret_sauce
-admin,1234
-jose,123
-
+problem_user,secret_sauce
+locked_out_user,secret_sauce
