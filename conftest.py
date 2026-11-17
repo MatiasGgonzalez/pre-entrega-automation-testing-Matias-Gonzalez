@@ -1,5 +1,9 @@
 import pytest 
 from selenium import webdriver
+import pytest_html
+import pathlib
+import base64
+
 
 @pytest.fixture
 def driver():
@@ -27,3 +31,20 @@ def headers():
         "x-api-key": "pro_c3ccc2e20fe86f195332fac957041972fbb6eca09615045ed959b63b53e30832"
     }
 
+
+@pytest.hookimpl(hookwrapper=True)
+def pytest_runtest_makereport(item, call):
+    outcome = yield
+    report = outcome.get_result()
+
+    if report.when == "call" and report.failed:
+        driver = item.funcargs.get("driver")
+
+        carpeta = pathlib.Path("reports/screenshots")
+        carpeta.mkdir(parents=True, exist_ok=True)
+        archivo = carpeta / f"{item.name}.png"
+
+        driver.save_screenshot(str(archivo))
+
+
+        

@@ -40,3 +40,12 @@ def test_usuario_inexistente(driver):
     # Validamos que NO ingrese al inventario
     assert "https://www.saucedemo.com/inventory.html" not in driver.current_url
 
+def test_login_usuario_mal_escrito(driver):
+    driver.get("https://www.saucedemo.com/")
+    login_page = LoginPage(driver)
+    
+    # Intentamos loguearnos con un usuario mal escrito
+    login_page.login("standard_userr", "secret_sauce")
+    
+    
+    assert "https://www.saucedemo.com/inventory.html" in driver.current_url
