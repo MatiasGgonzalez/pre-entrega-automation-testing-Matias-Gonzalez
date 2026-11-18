@@ -46,5 +46,8 @@ def pytest_runtest_makereport(item, call):
 
         driver.save_screenshot(str(archivo))
 
-
+        imagen = base64.b64encode(archivo.read_bytes()).decode("utf-8")
+        report.extr = [ 
+            pytest_html.extras.image(imagen, name ="Screenshot")
+        ]
         

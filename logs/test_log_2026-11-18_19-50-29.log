@@ -1,0 +1,12 @@
+2026-11-18 19:50:48,625 - INFO - Proyecto Final - Ejecutando test_login_exitoso con usuario: standard_user
+2026-11-18 19:50:49,117 - INFO - Proyecto Final - Pagina de login cargada correctamente.
+2026-11-18 19:50:49,618 - INFO - Proyecto Final - Credenciales ingresadas 
+2026-11-18 19:50:49,712 - INFO - Proyecto Final - Login exitoso, redirigido a la página de inventario.
+2026-11-18 19:50:54,190 - INFO - Proyecto Final - Ejecutando test_login_usuario_bloqueado con usuario: locked_out_user
+2026-11-18 19:50:55,212 - INFO - Proyecto Final - Credenciales ingresadas 
+2026-11-18 19:50:55,224 - INFO - Proyecto Final - Usuario bloqueado, no se pudo ingresar al inventario.
+2026-11-18 19:50:59,989 - INFO - Proyecto Final - Ejecutando test_usuario_inexistente
+2026-11-18 19:51:01,153 - INFO - Proyecto Final - Credenciales ingresadas 
+2026-11-18 19:51:01,161 - INFO - Proyecto Final - Usuario inexistente, no se pudo ingresar al inventario.
+2026-11-18 19:51:05,819 - INFO - Proyecto Final - Ejecutando test_login_usuario_mal_escrito
+2026-11-18 19:51:06,839 - INFO - Proyecto Final - Credenciales ingresadas 
