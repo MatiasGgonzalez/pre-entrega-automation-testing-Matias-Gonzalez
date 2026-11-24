@@ -1,0 +1,20 @@
+2026-11-24 19:49:17,907 - INFO - Proyecto Final - Iniciando test de inventario.
+2026-11-24 19:49:17,908 - INFO - Proyecto Final - Navegando a la página de login.
+2026-11-24 19:49:18,835 - INFO - Proyecto Final - Realizando login con usuario estándar.
+2026-11-24 19:49:19,193 - INFO - Proyecto Final - Login exitoso, redirigido a la página de inventario.
+2026-11-24 19:49:19,194 - INFO - Proyecto Final - Validando la presencia de productos en la página de inventario.
+2026-11-24 19:49:19,283 - INFO - Proyecto Final - Se encontraron 6 productos en la página de inventario.
+2026-11-24 19:49:19,336 - INFO - Proyecto Final - Validación de nombre y precio del primer producto exitosa.
+2026-11-24 19:49:19,356 - INFO - Proyecto Final - Validación de visibilidad del menú y filtro exitosa.
+2026-11-24 19:49:24,353 - INFO - Proyecto Final - Ejecutando test_login_exitoso con usuario: standard_user
+2026-11-24 19:49:25,092 - INFO - Proyecto Final - Pagina de login cargada correctamente.
+2026-11-24 19:49:25,484 - INFO - Proyecto Final - Credenciales ingresadas 
+2026-11-24 19:49:25,565 - INFO - Proyecto Final - Login exitoso, redirigido a la página de inventario.
+2026-11-24 19:49:29,984 - INFO - Proyecto Final - Ejecutando test_login_usuario_bloqueado con usuario: locked_out_user
+2026-11-24 19:49:31,201 - INFO - Proyecto Final - Credenciales ingresadas 
+2026-11-24 19:49:31,206 - INFO - Proyecto Final - Usuario bloqueado, no se pudo ingresar al inventario.
+2026-11-24 19:49:35,193 - INFO - Proyecto Final - Ejecutando test_usuario_inexistente
+2026-11-24 19:49:36,150 - INFO - Proyecto Final - Credenciales ingresadas 
+2026-11-24 19:49:36,156 - INFO - Proyecto Final - Usuario inexistente, no se pudo ingresar al inventario.
+2026-11-24 19:49:40,156 - INFO - Proyecto Final - Ejecutando test_login_usuario_mal_escrito
+2026-11-24 19:49:41,135 - INFO - Proyecto Final - Credenciales ingresadas 

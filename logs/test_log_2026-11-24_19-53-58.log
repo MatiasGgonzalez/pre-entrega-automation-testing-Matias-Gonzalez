@@ -1,0 +1,31 @@
+2026-11-24 19:54:02,745 - INFO - Proyecto Final - Iniciando test de carrito.
+2026-11-24 19:54:02,745 - INFO - Proyecto Final - Navegando a la página de login.
+2026-11-24 19:54:02,745 - INFO - Proyecto Final - Realizando login con usuario estándar.
+2026-11-24 19:54:03,554 - INFO - Proyecto Final - Página de login cargada correctamente.
+2026-11-24 19:54:03,869 - INFO - Proyecto Final - Login exitoso, redirigido a la página de inventario.
+2026-11-24 19:54:03,869 - INFO - Proyecto Final - Obteniendo producto del archivo JSON para agregar al carrito.
+2026-11-24 19:54:03,870 - INFO - Proyecto Final - Agregando producto 'Sauce Labs Backpack' al carrito.
+2026-11-24 19:54:04,074 - INFO - Proyecto Final - Navegando al carrito para verificar el producto agregado.
+2026-11-24 19:54:04,135 - INFO - Proyecto Final - Validando que el producto agregado esté presente en el carrito.
+2026-11-24 19:54:04,167 - INFO - Proyecto Final - Validando que el nombre del producto en el carrito sea el mismo que el del JSON.
+2026-11-24 19:54:04,184 - INFO - Proyecto Final - Validando que el precio del producto en el carrito sea el mismo que el del JSON.
+2026-11-24 19:54:07,727 - INFO - Proyecto Final - Iniciando test de inventario.
+2026-11-24 19:54:07,727 - INFO - Proyecto Final - Navegando a la página de login.
+2026-11-24 19:54:08,381 - INFO - Proyecto Final - Realizando login con usuario estándar.
+2026-11-24 19:54:08,730 - INFO - Proyecto Final - Login exitoso, redirigido a la página de inventario.
+2026-11-24 19:54:08,730 - INFO - Proyecto Final - Validando la presencia de productos en la página de inventario.
+2026-11-24 19:54:08,825 - INFO - Proyecto Final - Se encontraron 6 productos en la página de inventario.
+2026-11-24 19:54:08,882 - INFO - Proyecto Final - Validación de nombre y precio del primer producto exitosa.
+2026-11-24 19:54:08,914 - INFO - Proyecto Final - Validación de visibilidad del menú y filtro exitosa.
+2026-11-24 19:54:12,595 - INFO - Proyecto Final - Ejecutando test_login_exitoso con usuario: standard_user
+2026-11-24 19:54:13,174 - INFO - Proyecto Final - Pagina de login cargada correctamente.
+2026-11-24 19:54:13,516 - INFO - Proyecto Final - Credenciales ingresadas 
+2026-11-24 19:54:13,575 - INFO - Proyecto Final - Login exitoso, redirigido a la página de inventario.
+2026-11-24 19:54:17,496 - INFO - Proyecto Final - Ejecutando test_login_usuario_bloqueado con usuario: locked_out_user
+2026-11-24 19:54:18,335 - INFO - Proyecto Final - Credenciales ingresadas 
+2026-11-24 19:54:18,341 - INFO - Proyecto Final - Usuario bloqueado, no se pudo ingresar al inventario.
+2026-11-24 19:54:22,133 - INFO - Proyecto Final - Ejecutando test_usuario_inexistente
+2026-11-24 19:54:23,070 - INFO - Proyecto Final - Credenciales ingresadas 
+2026-11-24 19:54:23,076 - INFO - Proyecto Final - Usuario inexistente, no se pudo ingresar al inventario.
+2026-11-24 19:54:26,642 - INFO - Proyecto Final - Ejecutando test_login_usuario_mal_escrito
+2026-11-24 19:54:27,488 - INFO - Proyecto Final - Credenciales ingresadas 
